@@ -17,7 +17,7 @@ Temperature Scheduling: Adjusts exploration vs. exploitation depending on strate
 Stopping Criteria: Consensus reached when (a) both models >80% confidence in top choice, (b) max 5 iterations, or (c) strategy change <0.001.
 ### Results
 - Baseline: Generator ~73.4%, Discriminator ~60.9%.
-After weighted equilibrium search:
+/n After weighted equilibrium search:
 - Generator: 75.0% (+1.6%)
 - Discriminator: 68.0% (+7.1%)
 - Overall accuracy: 73.6%
