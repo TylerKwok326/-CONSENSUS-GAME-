@@ -10,11 +10,11 @@ These metrics combine into a single base strength score used to weight each mode
 ## Workflow
 Preprocessing: Filter out low-confidence answers (<10%), shuffle remaining choices to avoid position bias.
 Adversarial Game:
-Generator (Phi-2) proposes answers.
-Discriminator (Qwen2) evaluates correctness.
-Both update strategies iteratively using weighted softmax and Q-learning.
-Temperature Scheduling: Adjusts exploration vs. exploitation depending on strategy stability.
-Stopping Criteria: Consensus reached when (a) both models >80% confidence in top choice, (b) max 5 iterations, or (c) strategy change <0.001.
+- Generator (Phi-2) proposes answers.
+- Discriminator (Qwen2) evaluates correctness.
+- Both update strategies iteratively using weighted softmax and Q-learning.
+- Temperature Scheduling: Adjusts exploration vs. exploitation depending on strategy stability.
+- Stopping Criteria: Consensus reached when (a) both models >80% confidence in top choice, (b) max 5 iterations, or (c) strategy change <0.001.
 ### Results
 - Baseline: Generator ~73.4%, Discriminator ~60.9%.
 /n After weighted equilibrium search:
